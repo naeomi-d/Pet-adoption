@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../pett/images/adopt1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+    position: top;
+    height: auto;
+    left: 0px;
+    width: 150px;
+}
+.signin-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 24px; /* Padding around the text */
+    font-size: 16px; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background change */
+  }
+  
+  .signin-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+nav img{
+    width: 150px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 6px 12 px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(122, 211, 58, 0.796); 
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.welcome{
+    width: 90%;
+    color:rgb(179, 203, 19);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.welcome h1{
+    font-size: 62px;
+}
+.adopt-now{
+    width:100%;
+    margin:auto;
+    text-align: center;
+    padding:40px;
+    box-sizing: border-box;
+    background: rgb(178, 127, 33);
+}
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.adopt-btn{
+    display:inline-block;
+    text-decoration:none ;
+    color:black;
+    border:1px solid black ;
+    padding: 12px 34px;
+    font-size: 20px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.adopt-btn:hover{
+    border:1px solid pink;
+    background:pink;
+    transition: 1s;
+}
+.row{
+    width: 80%;
+    max-width:1170px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    overflow-x: hidden;
+    padding: 5rem 0;
+}
+.row .img-wrapper{
+    overflow: hidden;
+}
+.row .img-wrapper img{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 40px;
+}
+.row .content-wrapper{
+    width:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:30px;
+}
+.row .content-wrapper .content{
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.shop-btn{
+    display:inline-block;
+    text-decoration:none ;
+    color:black;
+    border:1px solid black ;
+    padding: 12px 34px;
+    font-size: 20px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.shop-btn:hover{
+    border:1px solid pink;
+    background:pink;
+    transition: 1s;
+}
+.donate-btn{
+    display:inline-block;
+    text-decoration:none ;
+    color:black;
+    border:1px solid black ;
+    padding: 12px 34px;
+    font-size: 20px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.donate-btn:hover{
+    border:1px solid pink;
+    background:pink;
+    transition: 1s;
+}
+.Learn-btn{
+    display:inline-block;
+    text-decoration:none ;
+    color:black;
+    border:1px solid black ;
+    padding: 12px 34px;
+    font-size: 20px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.Learn-btn:hover{
+    border:1px solid pink;
+    background:pink;
+    transition: 1s;
+}
+.cart-icon{
+    font-size: 30px;
+    color: #ddd;
+    margin-right: 20px;
+    
+    
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin:auto;
+    box-sizing: border-box;
+    background: rgb(122, 163, 31);
+    }
+
+.icons .fa-brands{
+    cursor: pointer;
+}
+/* -----about-page-----*/
+.sub-header{
+    height: 150vh;
+    width:100%;
+    background-image: url('../pett/images/about.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.983);
+    margin: 0 auto; 
+    padding: 30px;
+    box-sizing: border-box;
+}
+.sub-header .h2{
+    margin-top:100px;
+}
+
+.centered-content {
+    text-align: center; 
+    margin-bottom: 20px; 
+    width: 100%;
+    
+    box-sizing: border-box; 
+ }
+ 
+    .centered-content p {
+        max-width: 800px; 
+   margin: 0 auto; 
+   text-align: centre; 
+   padding: 0 20px; 
+   box-sizing: border-box; 
+   font-size:25px;
+    
+    }
+    .donate-section {
+        position: relative; 
+        width: 50%; 
+        margin: 0 auto;
+        margin-bottom: 40px;
+        padding: 15px; 
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        overflow: hidden; 
+    }
+    
+    .donate-section h2 {
+        font-size: 24px;
+        margin-bottom: 15px; 
+    }
+    
+    .donate-form {
+        max-width: 300px; 
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    .donate-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    .donate-form input[type="text"],
+    .donate-form input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px; 
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    
+    .donate-form textarea {
+        width: 100%;
+        height: 60px; 
+        padding: 8px;
+        margin-bottom: 10px; 
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    
+    .donate-form button {
+        display:inline-block;
+    text-decoration:none ;
+    color:black;
+    border:1px solid black ;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 20px;
+        font-size: 16px;
+        margin-left: 70px;
+    }
+    
+    .donate-form button:hover {
+        border:1px solid pink;
+    background:pink;
+    transition: 1s; 
+    }
+    
+    /* Styling for the dog image */
+    .dog-image {
+        position: absolute;
+        left: -30px; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        width: 150px; 
+        z-index: 0; 
+    }
+    
+    .dog-image img {
+        width: 100%; 
+        display: block; 
+    }
+
+
+
+
+/* pet adoption form*/
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/*Accessories page*/
+.accessories-section nav{
+    background-color: rgb(173, 173, 82);
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar {
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center; /* Aligns items in the center horizontally */
+    position: sticky; /* Sticks it in place when scrolling */
+    top: 0; /* Makes it stick to the top of the viewport */
+    z-index: 10; /* Ensures it stays on top of other elements */
+    padding: 10px;
+    box-shadow: 0px 4px 2px -2px gray; /* Adds a subtle shadow for better visibility */
+}
+
+/* Sidebar list styling */
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar list items styling */
+.sidebar ul li {
+    margin-right: 20px;
+    position: relative; /* Important for dropdown positioning */
+}
+
+/* Links styling */
+.sidebar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Dropdown menu */
+.sidebar ul li ul.dropdown {
+    display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 100%; /* Dropdown appears below the parent item */
+    left: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-shadow: 0px 4px 2px -2px gray;
+}
+
+/* Show dropdown on hover */
+.sidebar ul li:hover ul.dropdown {
+    display: block;
+}
+
+/* Dropdown list items styling */
+.sidebar ul li ul.dropdown li {
+    margin: 10px 0;
+}
+/* Product Grid */
+.products-section {
+    width: 75%;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+}
+.product-card:hover{
+    transform: scale(1.05);
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+.add-to-cart, .buy-now {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black; /* Default black border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Add border-color transition */
+}
+
+.add-to-cart:hover, .buy-now:hover {
+    background-color: pink; /* Background color on hover */
+    border-color: pink; /* Border color on hover */
+}
+
+/* Button styling */
+.signin-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signin-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content styling */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Close button inside modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Input fields in form */
+.box {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
